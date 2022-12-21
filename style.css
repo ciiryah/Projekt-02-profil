@@ -24,13 +24,15 @@ body {
   display: flex;
   flex-direction: column;
   /* border: 2px solid orange; */
-  box-shadow: 1px 1px 2px #3f464d;
   position: relative;
+  box-shadow: 1px 1px 2px #3f464d;
 }
 
 .hlavicka {
   /* border: 2px solid yellow; */
-  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .obsah {
@@ -41,6 +43,7 @@ body {
 
 .foto {
   width: 100%;
+  display: block;
   /* border: 2px solid red; */
 }
 
@@ -58,8 +61,7 @@ body {
   font-size: 170%;
   color: white;
   margin: 25px 20px 10px 30px;
-  padding-bottom: 5px;
-  padding-top: 5px; 
+  padding: 5px 0px;
   /* border: 2px solid cyan; */
 }
 
@@ -98,8 +100,7 @@ a {
 }
 
 .portfolio {
-  flex-grow: 2;
-  flex-basis: 300%;
+  flex: 1 1 100%;
   text-align: center;
   padding-top: 10px;
   border-top: 1px solid #3f464d;
@@ -112,7 +113,7 @@ a {
 }
 
 .facebook, .twitter {
-  flex-grow: 1;
+  flex: 1 1 50%;
   text-align: center;
   padding-top: 10px;
 }
